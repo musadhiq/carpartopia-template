@@ -3,18 +3,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import type { Product } from '../store/productsSlice';
 
-interface ProductCardProps {
-  id: string;
-  name: string;
-  price: number;
+type ProductCardProps = Omit<Product, 'description' | 'images' | 'features' | 'compatibility'> & {
   image: string;
-  location: string;
-  rating: number;
-  condition: string;
-  sellerName: string;
-  sellerContact: string;
-}
+};
 
 const ProductCard = ({
   id,
