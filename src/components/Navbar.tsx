@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -38,6 +38,12 @@ const Navbar = () => {
             />
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
           </div>
+          <Link to="/admin/login">
+            <Button variant="ghost" size="sm" className="flex items-center">
+              <User className="h-4 w-4 mr-2" />
+              Admin
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -77,6 +83,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Contact
+              </Link>
+              <Link 
+                to="/admin/login" 
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                Admin Login
               </Link>
             </nav>
           </div>
