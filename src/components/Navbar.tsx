@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, ShoppingCart, Search } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -38,11 +38,6 @@ const Navbar = () => {
             />
             <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
           </div>
-          <Button variant="ghost" size="icon" className="relative">
-            <ShoppingCart className="h-5 w-5" />
-            <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">3</span>
-          </Button>
-          <Button className="bg-blue-600 hover:bg-blue-700">Sign In</Button>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -83,9 +78,6 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <div className="pt-2 border-t">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">Sign In</Button>
-              </div>
             </nav>
           </div>
         </div>

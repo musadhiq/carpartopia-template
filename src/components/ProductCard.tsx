@@ -63,13 +63,12 @@ const ProductCard = ({
           </div>
         </div>
         
-        <div className="mt-4 flex items-center justify-between gap-2">
-          <Button variant="outline" className="flex-1">
-            Details
-          </Button>
-          <Button className="flex-1 bg-blue-600 hover:bg-blue-700">
-            Add to Cart
-          </Button>
+        <div className="mt-4">
+          <Link to={`/product/${id}`} className="w-full">
+            <Button className="w-full bg-blue-600 hover:bg-blue-700">
+              Details
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
