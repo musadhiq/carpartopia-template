@@ -6,7 +6,6 @@ import SearchHero from '@/components/SearchHero';
 import FeaturedCategories from '@/components/FeaturedCategories';
 import BenefitSection from '@/components/BenefitSection';
 import FeaturedProducts from '@/components/FeaturedProducts';
-import { ArrowRight } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -22,27 +21,15 @@ const Index = () => {
         
         <FeaturedProducts />
         
-        <section className="section bg-gray-50">
-          <div className="container-custom">
-            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Have Car Parts to Sell?</h2>
-                <p className="text-xl text-gray-600 mb-8">
-                  Join thousands of sellers on our platform and turn your unused car parts into cash. It's quick, easy, and free to list your items.
-                </p>
-                <button className="btn-primary group inline-flex items-center">
-                  Start Selling Today
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                </button>
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Car Parts" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+        <section className="section bg-blue-800 text-white">
+          <div className="container-custom text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Have Car Parts to Sell?</h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+              Join thousands of sellers on our platform and turn your unused car parts into cash. It's quick, easy, and free to list your items.
+            </p>
+            <button className="btn-accent px-8 py-4 text-lg">
+              Start Selling Today
+            </button>
           </div>
         </section>
       </main>
